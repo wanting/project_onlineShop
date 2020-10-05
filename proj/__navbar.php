@@ -117,9 +117,9 @@ if (empty($pageName)) {
         /* margin: 25px 0 0 0; */
     }
 
-    .member-submenu .f-member-links {
-        /* padding: 20px 0; */
-    }
+    /* .member-submenu .f-member-links {
+        padding: 20px 0;
+    } */
 
     .f-member-links-m>a {
         display: none;

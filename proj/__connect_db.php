@@ -25,7 +25,7 @@ if(! isset($_SESSION)){
     session_start();
 }
 
-define('WEB_ROOT','/proj_pugrace/proj'); //網址縮短用變數
+define('WEB_ROOT','/project_onlineShop/proj'); //網址縮短用變數
 
 define('WEB_INDEX', 'a-index.php');
 define('WEB_MEMBER', 'member-index.php');

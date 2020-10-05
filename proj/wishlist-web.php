@@ -228,9 +228,9 @@ if (empty($r_row)) {
         background-color: #e8e2d4;
     }
 
-    .white_btn {
-        /* width: 90%; */
-    }
+    /* .white_btn {
+        width: 90%;
+    } */
 
     @media screen and (max-width:576px) {
         .white_btn {

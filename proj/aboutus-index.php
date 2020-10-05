@@ -111,7 +111,7 @@ $pageName = 'ab-home';
         width: 100%;
     }
 
-    .y-main-nav ul li:hover a {}
+    /* .y-main-nav ul li:hover a {} */
 
     .y-main-nav ul li:active a {
         transition: 0.1s;
@@ -343,9 +343,9 @@ $pageName = 'ab-home';
     }
 
     @media screen and (max-width:414px) {
-        .y-brand.y-parallax {
-            /* margin: 21px; */
-        }
+        /* .y-brand.y-parallax {
+            margin: 21px;
+        } */
 
         .y-brand {
             padding: 25px 20px;
@@ -367,7 +367,7 @@ $pageName = 'ab-home';
         padding-bottom: 50px;
     }
 
-    .y-team>span {}
+    /* .y-team>span {} */
 
     .y-team-pic {
         margin: 0 auto;
@@ -469,9 +469,9 @@ $pageName = 'ab-home';
             margin: 0 auto;
         }
 
-        .y-contact-form {
-            /* margin: 50px 21px; */
-        }
+        /* .y-contact-form {
+            margin: 50px 21px;
+        } */
 
         .y-sub-btn {
             width: 300px;
