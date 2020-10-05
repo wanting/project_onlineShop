@@ -1,2 +1,3 @@
 # proj_pugrace
-teamwork make dreamwork
+
+student project
