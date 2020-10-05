@@ -1,0 +1,295 @@
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.img-fit {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.radius_border {
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+a{
+    color: #465038;
+}
+a:hover{
+    color: #cf7e60;
+}
+
+/* 麵包屑 */
+.breadcrumb {
+    background: transparent;
+    margin: 0;
+    padding:0;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #465038;
+    content: ">";
+}
+
+/* 字級 */
+.font1{
+    color: #465038;
+    font-size: 32px;
+     font-weight:bold;
+}
+.font2{
+    color: #465038;
+    font-size: 28px;
+     font-weight:bold;
+}
+.font3{
+    color: #465038;
+    font-size: 24px;
+     font-weight:400;
+}
+.font4{
+    color: #465038;
+    font-size: 18px;
+}
+.font5{
+    color: #465038;
+    font-size: 16px;    
+}
+.font6{
+    color: #465038;
+    font-size: 14px;   
+}
+@media screen and (max-width:576px){
+    .font1{
+        color: #465038;
+        font-size: 24px;
+         font-weight:bold;
+    }
+    .font2{
+        color: #465038;
+        font-size: 20px;
+         font-weight:bold;
+    }
+    .font3{
+        color: #465038;
+        font-size: 16px;
+         font-weight:400;
+    }
+    .font4{
+        color: #465038;
+        font-size: 14px;
+    }
+    .font5{
+        color: #465038;
+        font-size: 12px;    
+    }
+    .font6{
+        color: #465038;
+        font-size: 12px;   
+    }
+
+}
+
+/* 顏色 */
+
+.green{
+  color: #465038;
+}
+.red{
+  color:#cf7e60;
+}
+.yellow{
+    color:#e0b872;  
+}
+.beige{
+    color: #e7e1d2;
+}
+
+.bg_green{
+    background-color: #465038;
+  }
+.bg_red{
+    background-color:#cf7e60;
+  }
+.bg_yellow{
+    background-color:#e0b872;  
+  }
+.bg_beige{
+    background-color: #e7e1d2;
+}
+
+/* 共用按鈕 */
+.yellow_btn{
+    padding: 10px 60px;
+    background: #E0B872;
+    border-radius: 30px;
+    font-size: 20px;
+    letter-spacing:2px ;
+    line-height: 20px;
+    color:#465038;
+}
+
+.yellow_btn:hover, a.yellow_btn:not([href]):hover {
+    background: #cf7e60;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.yellow_btn:active{
+    transform: scale(1.1,1.1);
+}
+
+.green_btn{
+    padding: 10px 60px;
+    background: #465038;
+    border-radius: 30px;
+    font-size: 20px;
+    letter-spacing:2px ;
+    line-height: 20px;
+    color:#ffffff;
+    text-decoration: none;
+}
+.green_btn:hover, a.green_btn:not([href]):hover {
+    background: #cf7e60;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.green_btn:active{
+    transform: scale(1.1,1.1);
+}
+
+.white_btn{
+    padding: 10px 60px;
+    background: #ffffff;
+    border-radius: 30px;
+    border: 2px solid #465038;
+    font-size: 20px;
+    letter-spacing:2px ;
+    line-height: 20px;
+    color:#465038;
+}
+.white_btn:hover, a.white_btn:not([href]):hover {
+    background: #465038;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.white_btn:active{
+    transform: scale(1.1,1.1);
+}
+
+.red_btn{
+    padding: 10px 60px;
+    background: #cf7e60;
+    border-radius: 30px;
+    font-size: 20px;
+    letter-spacing:2px ;
+    line-height: 20px;
+    color: #ffffff;
+}
+.red_btn:hover, a.red_btn:not([href]):hover {
+    background: #465038;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.red_btn:active{
+    transform: scale(1.1,1.1);
+}
+
+/* 解除點選狀態外框線 */
+.yellow_btn:focus,
+.green_btn:focus,
+.red_btn:focus{
+    outline: none;
+}
+
+/* menu特效 */
+.y-menu {
+    padding: 0;
+    display: flex;
+
+}
+
+.y-main-nav {
+    margin-top: 25px;
+}
+
+.y-main-nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.y-main-nav ul li a {
+    color: #465038;
+    text-decoration: none;
+    display: inline-block;
+    /* padding: 10px; */
+    transition: color 0.5s;
+}
+
+.y-main-nav ul li .y-underline {
+    height: 3px;
+    margin: 2px 0;
+    background-color: transparent;
+    width: 0%;
+    transition: width 0.2s, background-color 0.5s;
+    margin: 0 auto;
+}
+
+.y-main-nav ul li.y-active-link .y-underline {
+    width: 100%;
+    background-color: #e0b872;
+}
+
+.y-main-nav ul li:hover .y-underline {
+    background-color: #e0b872;
+    width: 100%;
+}
+
+.y-main-nav ul li:active a {
+    transition: 0.1s;
+    
+}
+.y-main-nav ul li:active .y-underline {
+    transition: none;
+    background-color: rgba(255, 255, 255, 0.76);
+}  
+/* ------------------TOP------------------*/
+.top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: .1s;
+    z-index: 999;
+  }
+
+  .top>img:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+      box-shadow: 0 6px 15px rgba(0,0,0,.25);
+  }
+
+  .top>img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  @media screen and (max-width:576px){
+    .top {
+        position: fixed;
+        bottom: 80px;
+        right: 30px;
+      }
+}

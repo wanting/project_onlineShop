@@ -1,0 +1,194 @@
+
+        .b-hight {
+            height: 50px;
+        }
+
+        .b-h1{
+            text-align: center ;
+         
+            /* font-weight: bold; */
+            margin: 25px 0;
+            letter-spacing: 4.2px;
+        }
+
+        .b-main-nav ul{
+            margin-bottom: 50px;
+            padding: 0;
+        }
+
+        .b-menu-n {
+            padding: 0;
+            display: flex;
+        }
+
+        .b-btn-n {
+
+            list-style: none;
+            margin: 10px 30px;
+            font-family: 'Noto Sans TC', sans-serif;
+            /* font-weight: 400; */
+            letter-spacing: 1.2px;
+            font-size: 18px;
+            padding: 0 5px;
+            padding-bottom: 10px;
+            border-bottom: transparent 2px solid;
+            transition: .5s;
+
+
+        }
+        .b-btn-n:hover{
+            border-bottom: 2px solid #E0B872;
+            border-radius: 0;
+            /* transition: .5s; */
+        }
+        .b-btn-n.active{
+            border-bottom: 2px solid #E0B872;
+            border-radius: 0;
+            /* transition: .5s; */
+        }
+
+        .b-btn-n a {
+            text-decoration: none;
+            color: #465038;
+            border: 0;
+            font-size: 20px;
+        }
+
+        .b-sale {
+            color:#CF7E60 !important;
+        }
+
+        .b-phone-nav-n {
+            display: none;
+        }
+
+        @media screen and (max-width:414px) {
+            /* .b-h1 {
+                font-size: 24px;
+                font-weight: 500;
+            } */
+
+            .b-main-nav {
+                display: none;
+            }
+
+            .b-menu-n {
+                flex-direction: column;
+                margin-bottom: 0;
+                margin: 0 36px;
+
+
+
+            }
+
+            .b-menu-n li {
+                position: relative;
+            }
+
+            .b-all-n {
+                margin-left: 65px;
+                margin-right: 20px;
+                font-size: 16px;
+                font-weight: 500;
+                
+
+            }
+
+            .b-down-arrow-n {
+                border: solid #465038;
+                border-width: 0 1px 1px 0;
+                display: inline-block;
+                padding: 5px;
+                margin: 19px;
+                transform: rotate(45deg);
+                transition: .5s;
+                /* -webkit-transform: rotate(45deg); */
+            }
+
+
+
+            .b-phone-nav-n ul li ul .b-down-arrow-n.b-up-arrow-n {
+                transform: rotate(-135deg);
+            }
+
+
+            .b-list-n {
+                color: #465038;
+                margin: 0;
+                padding: 10px 20px;
+                border-top: solid 1px #465038;
+                /* border-radius: 0; */
+                /* border-bottom: solid 1px #465038; */
+
+
+            }
+
+            .b-phone-nav-n {
+                display: block;
+
+            }
+
+            .b-phone-nav-n .wrapper {
+                display: flex;
+                width: 100%;
+                text-align: center;
+
+
+            }
+
+            .b-phone-nav-n ul {
+                list-style: none;
+                padding: 0;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .b-phone-nav-n ul li {
+                position: relative;
+                border-bottom: solid 1px #465038;
+
+            }
+
+            .b-submenu1-n {
+
+                position: absolute;
+                transition: .5s;
+                /* opacity: 0; */
+                /* 加hidden才能把空間隱藏 */
+                overflow: hidden;
+                max-height: 0;
+                /* width: 100%讓寬度跟上層一樣 */
+                width: 100%;
+                text-align: center;
+                border-radius: 0;
+                /* border: solid 1px #465038; */
+                border-top: solid 1px #465038;
+                background-color:#ffffffe3;
+                z-index: 2;
+              
+
+            }
+
+            .b-phone-nav-n ul li .b-submenu1-n.open {
+                opacity: 1;
+                max-height: 300px;
+                background-color:#ffffffe3;
+
+            }
+            .b-submenu1-n li a{
+                font-size: 16px;
+                font-weight: 500;
+                letter-spacing: 0.5px;
+            }
+
+            .b-phone-nav-n ul li a {
+                color: #465038;
+                padding: 10px 20px;
+                /* display: block撐開 */
+                display: block;
+
+            }
+
+
+        }
+   

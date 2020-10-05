@@ -1,0 +1,479 @@
+
+   .top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.top>img {
+    height: 50px;
+    width: 50px;
+}
+
+.breadcrumb-2{
+    display: none;
+}
+
+.b-btn {
+
+    list-style: none;
+    margin: 10px;
+    font-family: 'Noto Sans TC', sans-serif;
+    /* font-weight: 400; */
+    letter-spacing: 2.7px;
+    font-size: 18px;
+
+
+}
+
+.b-btn a {
+    text-decoration: none;
+    color: #465038;
+    border: 0;
+    padding: 10px;
+
+}
+
+.b-h2 {
+    letter-spacing: 3.6px;
+    font-weight: bold;
+    text-align: center;
+    margin: 25px 0;
+}
+
+/* -------slider--------- */
+
+.b-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 250px;
+}
+
+.b-slideWrapper {
+    height: 360px;
+    background: #e8e2d4;
+}
+
+.b-slideImages {
+    /* 四張圖片的寬加起來800*4 */
+    /* width: 4000px; */
+    /* 往左移(一張照片的寬)可以看到下一張 */
+    left: 0;
+    transition: .5s;
+}
+
+.b-slideImages li {
+    /* 讓圖片跟容器一樣寬 */
+    width: 800px;
+    height: 400px;
+}
+
+.b-slideImages img {
+    /* 呈現整張圖片 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.b-slideDots {
+    left: 0;
+    width: 100%;
+    /* bottom: 0px; */
+    margin-top: 25px;
+}
+
+.b-slideDots li {
+    width: 15px;
+    height: 15px;
+    /* border: 1px solid #465038; */
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: #46503877;
+    /* opacity: 50%; */
+}
+
+.b-slideDots li:hover,
+.b-slideDots li.active {
+    background: #465038;
+}
+
+.b-arrow {
+    color: #465038;
+}
+
+.b-arrow-b-btn {
+    /* background: */
+    /* top: 0;
+    bottom: 0; */
+    width: 80px;
+    /* height: 80px; */
+    font-size: 30px;
+    /* opacity: .5; */
+
+}
+
+.b-arrow-b-btn:hover {
+
+    cursor: pointer;
+}
+
+.b-arrow-b-btn-g {
+
+    padding-left: 0;
+
+    margin: 0 -75px;
+    margin-top: -190px;
+
+
+}
+
+.b-arrow-b-btn-l {
+    padding-left: 0;
+}
+
+.b-arrow-b-btn-r {
+
+    padding-left: 0;
+
+
+}
+
+.b-arrow {
+    z-index: 1;
+}
+
+
+/* -------------slider-------------------------- */
+
+
+
+/* ---------------------------------------- */
+.b-menu {
+    flex-direction: column;
+    margin-bottom: 0;
+    width: 175px;
+
+}
+
+.b-menu li {
+    position: relative;
+}
+
+.b-main-nav-g {
+    display: flex;
+    justify-content: space-between;
+}
+
+.b-all {
+    margin-left: 20px;
+    margin-right: -8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #465038;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+.b-down-arrow {
+    border: solid #465038;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 5px;
+    margin: 19px;
+    transform: rotate(45deg);
+    transition: .5s;
+    
+}
+
+.b-phone-nav ul li ul .b-down-arrow.b-up-arrow {
+    transform: rotate(-135deg);
+}
+
+.b-list {
+    color: #465038;
+    margin: 0;
+    padding: 10px 20px;
+    border-top: solid 1px #465038;
+    /* border-bottom: solid 1px #465038; */
+
+}
+
+.b-phone-nav {
+    display: block;
+}
+
+.b-phone-nav .b-wrapper {
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+.b-phone-nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.b-phone-nav ul li {
+    position: relative;
+    border-bottom: solid 1px #465038;
+    /* border-top: solid 1px #465038; */
+
+}
+
+.b-submenu1 {
+
+    position: absolute;
+    transition: .5s;
+    /* opacity: 0; */
+    /* 加hidden才能把空間隱藏 */
+    overflow: hidden;
+    max-height: 0;
+    /* width: 100%讓寬度跟上層一樣 */
+    width: 100%;
+    text-align: center;
+    border-radius: 0;
+    /* border: solid 1px #465038; */
+    z-index: 1;
+    background-color: #ffffff;
+    border-top: solid 1px #465038;
+
+
+}
+
+.b-phone-nav ul li .b-submenu1.open {
+    opacity: 1;
+    max-height: 300px;
+    background-color:#ffffffe3;
+
+}
+
+.b-submenu1 li a {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-family: 'Noto Sans TC', sans-serif;
+
+}
+
+.b-phone-nav ul li a {
+    color: #465038;
+    padding: 10px 20px;
+    /* display: block撐開 */
+    display: block;
+}
+
+/* ---------------------------------------- */
+
+
+
+
+/* ......................................... */
+
+
+.b-g-card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.b-card {
+    border: 0;
+    margin-top: 58px;
+    padding: 0 10px;
+}
+
+.b-card ul {
+    list-style: none;
+}
+
+.b-card .b-figure {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background-color: #e8e2d4;
+    margin: 0 auto;
+    overflow: hidden;
+
+
+}
+
+.b-card .b-figure .cover-fit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.b-card .b-figure .cover-fit:hover{
+    transform: scale(1.2, 1.2);
+    transition: all ease-in .8s;
+}
+
+.b-card .b-fa-heart {
+   
+    color: #465038;
+    position: absolute;
+    bottom: 33%;
+    right: 15%;
+    font-size: 1.7rem ;
+    z-index: 1;
+   
+}
+
+/* .like {
+    display: none;
+}
+
+.like.appear {
+    display: block;
+} */
+
+.b-card ul li {
+    /* color: #465038; */
+    /* font-family: 'Noto Sans TC', sans-serif; */
+    letter-spacing: 1.6px;
+    text-align: center;
+    border: 0;
+    /* font-size: 16px; */
+}
+
+.b-productName {
+    padding-top: 25px;
+    padding-bottom: 0;
+    /* width: 80px; */
+}
+
+.b-card ul .price {
+    /* font-size: 28px; */
+    /* font-weight: 600; */
+    letter-spacing: 2.8px;
+    padding-top: 26px;
+
+
+}
+
+.page-link {
+    color: #465038 !important;
+    border-radius: 50%;
+    border: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: #ffffff !important;
+    font-size: 20px;
+    padding: 0 20px;
+
+}
+.page {
+    margin: 0 auto;
+}
+.productName {
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+.b-arrow {
+    font-size: 30px;
+}
+
+
+@media screen and (max-width:579px) {
+    .top{
+        position: fixed;
+        bottom: 80px;
+        right: 30px;
+    }
+    .b-main-nav-g {
+        flex-direction: column;
+    }
+    .breadcrumb-1{
+        display: none;
+    }
+    .breadcrumb-2{
+        display: block;
+        margin: 30px auto;
+        /* margin-top: 30px; */
+
+    }
+    .b-h2 {
+        display: none;
+    }
+
+    .b-wrapper {
+        max-width: 300px;
+        margin: 0 auto;
+        margin-bottom: 170px;
+        margin-top: 48.5px;
+    }
+    .b-slideWrapper {
+        height: 270px;
+        background: #e8e2d4;
+    }
+    .b-slideImages {
+        /* 四張圖片的寬加起來800*4 */
+        /* width: 4000px; */
+        /* 往左移(一張照片的寬)可以看到下一張 */
+        left: 0;
+        transition: .5s;
+    }
+    .b-slideImages li {
+        /* 讓圖片跟容器一樣寬 */
+        /* width: 270px; */
+        height: 270px;
+    }
+
+    .b-arrow-b-btn-g {
+        padding-left: 0;
+        
+        margin: 0 -45px;
+        margin-top: -140px;
+
+    }
+
+    /* ---------------------------------------- */
+   
+    .b-main-nav-g {
+        justify-content: center;
+        padding: 10px 0 45px 0;
+        margin: 0 36px;
+    }
+
+    .b-phone-nav {
+        width: 100%;
+    }
+
+    .b-phone-nav ul{
+        width: 100%;
+    }
+
+    .b-card ul li {
+        letter-spacing: 0.96px;
+        /* font-size: 1px; */
+    }
+    .braedCrumb {
+        display: none;
+    }
+
+    /* ...................................... */
+    .b-g-card{
+        margin: 0 auto 50px auto;
+        max-width: 330px;
+    }
+    .b-card {
+        max-width: 165px;
+        margin-top: 20px;
+        padding: 0 5px;
+    }
+    .b-card .b-figure {
+        width: 146px;
+        height: 146px;
+       
+    }
+    .b-card .b-fa-heart {
+        bottom: 47%;
+        right: 13%;
+        font-size: 1rem ;
+    }
+    .page {
+        display: none;
+    }
+
+}
